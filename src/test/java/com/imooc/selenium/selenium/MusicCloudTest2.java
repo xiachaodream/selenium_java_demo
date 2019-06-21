@@ -163,6 +163,7 @@ public class MusicCloudTest2 {
         // option.requireWindowFocus();
         // driver = new InternetExplorerDriver(option);
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         // System.setProperty("webdriver.gecko.driver", "d:\\drivers\\geckodriver.exe");
         // driver = new FirefoxDriver();
         // 设置默认的等待时长

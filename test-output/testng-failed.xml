@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="MusicCloudTest(failed)">
+    <classes>
+      <class name="com.imooc.selenium.selenium.MusicCloudTest2">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="f2" invocation-numbers="0 1 2 3 4 5"/>
+        </methods>
+      </class> <!-- com.imooc.selenium.selenium.MusicCloudTest2 -->
+    </classes>
+  </test> <!-- MusicCloudTest(failed) -->
+</suite> <!-- Failed suite [test] -->

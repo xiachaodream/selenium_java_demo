@@ -1,0 +1,364 @@
+<html>
+<head>
+<title>TestNG:  MusicCloudTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MusicCloudTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 20 17:24:00 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>190 seconds (190747 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f2()'><b>f2</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容是HTML代码, https://music.163.com/#/song?id=22006167, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.id: g_iframe, <h1>好听，不錯哦</h1>, 评论成功</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1677883662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1677883662'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f2()'><b>f2</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容是JS代码, https://music.163.com/#/song?id=22006168, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.id: g_iframe, <script>alert('好听，不錯哦')</script>, 评论成功</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace826172537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace826172537'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f2()'><b>f2</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容是合法的, https://music.163.com/#/song?id=22006169, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.id: g_iframe, 好听，不錯哦, 评论成功</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997403185", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997403185'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f2()'><b>f2</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容包含换行符, https://music.163.com/#/song?id=22006170, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.id: g_iframe, 好听，不錯哦！
+好听，不錯哦！
+, 评论成功</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1869852578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1869852578'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f2()'><b>f2</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容包含表情, https://music.163.com/#/song?id=22006171, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.id: g_iframe, [强][强][强]
+好听，不錯哦！
+, 评论成功</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1953517520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1953517520'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f2()'><b>f2</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容包含@{账号}, https://music.163.com/#/song?id=22006172, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.id: g_iframe, @云音乐小秘书 厉害了
+好听，不錯哦！
+, 评论成功</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2140342673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2140342673'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at com.imooc.selenium.selenium.MusicCloudTest2.f2(MusicCloudTest2.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest.f1()'><b>f1</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest<br>Parameters: 非登录状态，发表评论失败, https://music.163.com/#/song?id=29099236, By.className: area, By.className: n-log2, 手机号登录</td>
+<td></td>
+<td>14</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest@2f229b73</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f3()'><b>f3</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容是空，发表评论失败, https://music.163.com/#/song?id=17673505, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.xpath: //iframe[1], , 输入点内容再提交</td>
+<td></td>
+<td>10</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f3()'><b>f3</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容是空格，发表评论失败, https://music.163.com/#/song?id=17673505, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.xpath: //iframe[1],    , 输入点内容再提交</td>
+<td></td>
+<td>10</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f3()'><b>f3</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容过长，发表评论失败, https://music.163.com/#/song?id=17673505, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.xpath: //iframe[1], 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111, 输入不能超过140个字符</td>
+<td></td>
+<td>11</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f3()'><b>f3</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容包含特殊字符, https://music.163.com/#/song?id=17673505, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.xpath: //iframe[1], @好听，不錯哦！@#￥%&*<>
+';,{}[]=+好听，不錯哦！
+, 评论成功</td>
+<td></td>
+<td>10</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f3()'><b>f3</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容包含qq号码，发表评论失败, https://music.163.com/#/song?id=17673505, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.xpath: //iframe[1], 发票，QQ876295854, 评论成功</td>
+<td></td>
+<td>10</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+<tr>
+<td title='com.imooc.selenium.selenium.MusicCloudTest2.f3()'><b>f3</b><br>Test class: com.imooc.selenium.selenium.MusicCloudTest2<br>Parameters: 输入的内容包含手机号码，发表评论失败, https://music.163.com/#/song?id=17673505, By.className: area, By.className: u-btn-1, By.className: sysmsg, By.xpath: //iframe[1], 发票，17721038951, 评论成功</td>
+<td></td>
+<td>10</td>
+<td>com.imooc.selenium.selenium.MusicCloudTest2@90bb332</td></tr>
+</table><p>
+</body>
+</html>
